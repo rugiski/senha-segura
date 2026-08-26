@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas Seguras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <img src="unlock.svg" alt="Cadeado" class="icone" width="48" height="48">
+      <h1>Gerador de senhas</h1>
+      <p>Gere instantaneamente uma senha aleatória e segura</p>
+    </header>
+
+    <section class="senha-gerada">
+      <label for="campo-senha">Senha</label>
+      <div class="campo-senha-container">
+        <input type="text" id="campo-senha" readonly value="Clique em Gerar">
+        <button id="botao-copiar" title="Copiar senha">📋</button>
+      </div>
+    </section>
+
+    <section class="personalizacao">
+      <h2>Personalize sua senha</h2>
+
+      <div class="parametro-senha">
+        <label>Número de caracteres</label>
+        <div class="controle-tamanho">
+          <button class="parametro-senha__botao" id="diminuir">−</button>
+          <span class="parametro-senha__texto" id="tamanho">12</span>
+          <button class="parametro-senha__botao" id="aumentar">+</button>
+        </div>
+      </div>
+
+      <div class="opcoes">
+        <label><input type="checkbox" id="maiusculas" checked> Letras maiúsculas (A-Z)</label>
+        <label><input type="checkbox" id="minusculas" checked> Letras minúsculas (a-z)</label>
+        <label><input type="checkbox" id="numeros" checked> Números (0-9)</label>
+        <label><input type="checkbox" id="simbolos" checked> Símbolos (!@#$%...)</label>
+      </div>
+
+      <button id="botao-gerar" class="botao-principal">Gerar senha</button>
+    </section>
+
+    <section class="matematica">
+      <h3>Matemática da segurança</h3>
+      <p>Combinações possíveis: <strong id="combinacoes">—</strong></p>
+      <p>Entropia aproximada: <strong id="entropia">—</strong> bits</p>
+      <p class="forca" id="forca-texto">Força: —</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
