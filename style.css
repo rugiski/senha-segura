@@ -1,0 +1,196 @@
+:root {
+  --fundo: #0f172a;
+  --fundo-texto: #1e293b;
+  --branco: #f8fafc;
+  --borda: #334155;
+  --destaque: #22c55e;
+  --destaque-hover: #16a34a;
+  --texto-secundario: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--fundo);
+  color: var(--branco);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: var(--fundo-texto);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.icone {
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: var(--texto-secundario);
+  font-size: 0.95rem;
+}
+
+.senha-gerada {
+  margin-bottom: 28px;
+}
+
+.senha-gerada label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.campo-senha-container {
+  display: flex;
+  gap: 8px;
+}
+
+#campo-senha {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  background: var(--fundo);
+  border: 2px solid var(--borda);
+  border-radius: 8px;
+  color: var(--branco);
+  letter-spacing: 1px;
+}
+
+#botao-copiar {
+  padding: 0 16px;
+  background: var(--borda);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+
+#botao-copiar:hover {
+  background: #475569;
+}
+
+.personalizacao h2 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.parametro-senha {
+  margin-bottom: 20px;
+}
+
+.controle-tamanho {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.parametro-senha__botao {
+  background-color: var(--fundo-texto);
+  color: var(--branco);
+  border: 2px solid var(--borda);
+  padding: 12px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.parametro-senha__botao:hover {
+  background: var(--borda);
+}
+
+.parametro-senha__texto {
+  border-top: 2px solid var(--borda);
+  border-bottom: 2px solid var(--borda);
+  padding: 12px 24px;
+  font-size: 24px;
+  min-width: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.opcoes label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.opcoes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--destaque);
+}
+
+.botao-principal {
+  width: 100%;
+  padding: 16px;
+  background: var(--destaque);
+  color: #052e16;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botao-principal:hover {
+  background: var(--destaque-hover);
+}
+
+.matematica {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--borda);
+  font-size: 0.95rem;
+}
+
+.matematica h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.matematica p {
+  margin-bottom: 6px;
+  color: var(--texto-secundario);
+}
+
+.matematica strong {
+  color: var(--branco);
+}
+
+.forca {
+  margin-top: 12px !important;
+  font-weight: 600;
+}
